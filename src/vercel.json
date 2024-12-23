@@ -2,6 +2,7 @@
     "rewrites": [
       { "source": "/home", "destination": "/" },
       { "source": "/", "destination": "/" },
+      { "source": "/(.*)", "destination": "/" },
       { "source": "/explore", "destination": "/explore" },
       { "source": "/explore/:projectTitle", "destination": "/explore/:projectTitle" },
       { "source": "/courses", "destination": "/courses" },
