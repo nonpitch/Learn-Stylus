@@ -1,16 +1,5 @@
 {
     "rewrites": [
-      { "source": "/home", "destination": "/" },
-      { "source": "/", "destination": "/" },
-      { "source": "/(.*)", "destination": "/" },
-      { "source": "/explore", "destination": "/explore" },
-      { "source": "/explore/:projectTitle", "destination": "/explore/:projectTitle" },
-      { "source": "/courses", "destination": "/courses" },
-      { "source": "/courses/overview/:courseTitle", "destination": "/courses/overview/:courseTitle" },
-      { "source": "/courses/overview/:courseTitle/:lessonTitle", "destination": "/courses/overview/:courseTitle/:lessonTitle" },
-      { "source": "/exams", "destination": "/exams" },
-      { "source": "/exams/:examTitle", "destination": "/exams/:examTitle" },
-      { "source": "/exams/:examTitle/results", "destination": "/exams/:examTitle/results" },
-      { "source": "/:path*", "destination": "/coming-soon" }
+      { "source": "/(.*)", "destination": "/" }
     ]
 }
