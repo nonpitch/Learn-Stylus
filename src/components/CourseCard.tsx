@@ -14,7 +14,7 @@ interface CourseCardProps {
 const CourseCard = ({ description, title, image, category, difficulty, isCourseOne = false }: CourseCardProps) => {
   return (
     <Link 
-      to={isCourseOne ? `/courses/overview/${formatTitleToUrl(title)}` : `/coming-soon`}
+      to={`/courses/overview/${formatTitleToUrl(title)}`}
       className="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow w-[380px] group"
     >
       <div className="relative h-[240px] overflow-hidden">
