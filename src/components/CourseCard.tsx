@@ -1,4 +1,6 @@
 import { Badge } from './ui/Badge';
+import { Link } from 'react-router-dom';
+import { formatTitleToUrl } from './utils/examUtils';
 
 interface CourseCardProps {
   description: string;
@@ -6,14 +8,13 @@ interface CourseCardProps {
   image: string;
   category: string;
   difficulty: string;
-  link: string;
   isCourseOne?: boolean;
 }
 
-const CourseCard = ({ description, title, image, category, difficulty, link, isCourseOne = false }: CourseCardProps) => {
+const CourseCard = ({ description, title, image, category, difficulty, isCourseOne = false }: CourseCardProps) => {
   return (
-    <a 
-      href={link}
+    <Link 
+      to={isCourseOne ? `/courses/overview/${formatTitleToUrl(title)}` : `/coming-soon`}
       className="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow w-[380px] group"
     >
       <div className="relative h-[240px] overflow-hidden">
@@ -44,7 +45,7 @@ const CourseCard = ({ description, title, image, category, difficulty, link, isC
         </div>
         <h4 className="text-gray-600 text-base leading-relaxed mb-6">{description}</h4>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Badge } from './ui/Badge';
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   description: string;
@@ -12,8 +13,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ description, title, image, category, difficulty, link = "" }: ProjectCardProps) => {
   return (
-    <a 
-      href={link || "#"}
+    <Link 
+      to={link || "#"}
       className="block bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow w-[380px] group"
     >
       <div className="relative h-[240px] overflow-hidden">
@@ -44,7 +45,7 @@ const ProjectCard = ({ description, title, image, category, difficulty, link = "
         </div>
         <h4 className="text-gray-600 text-base leading-relaxed mb-6">{description}</h4>
       </div>
-    </a>
+    </Link>
   );
 };
 
