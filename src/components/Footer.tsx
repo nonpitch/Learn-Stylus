@@ -1,4 +1,5 @@
 import { Twitter, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -14,15 +15,15 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="/explore" className="text-gray-400 hover:text-white">Explore Projects</a></li>
-              <li><a href="/courses" className="text-gray-400 hover:text-white">All Courses</a></li>
-              <li><a href="/exams" className="text-gray-400 hover:text-white">Practice Exams</a></li>
+              <li><Link to="/explore" className="text-gray-400 hover:text-white">Explore Projects</Link></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">All Courses</Link></li>
+              <li><Link to="/exams" className="text-gray-400 hover:text-white">Practice Exams</Link></li>
             </ul>
           </div>
           <div>
           <h4 className="text-lg font-semibold mb-4">Resources</h4>
           <ul className="space-y-2">
-              <li><a href="/coming-soon" className="text-gray-400 hover:text-white">Glossary</a></li>
+              <li><Link to="/coming-soon" className="text-gray-400 hover:text-white">Glossary</Link></li>
               <li><a href="https://docs.arbitrum.io/stylus/stylus-overview" className="text-gray-400 hover:text-white">Docs</a></li>
             </ul>
           </div>

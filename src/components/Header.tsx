@@ -18,22 +18,22 @@ const Header = () => {
 
           <nav className="flex-1 flex justify-left px-12 items-center">
             <div className="flex items-center space-x-8">
-              <a href="/explore" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
+              <Link to="/explore" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
                 <BookOpen className="w-4 h-4" />
                 <span>Explore</span>
-              </a>
+              </Link>
               <Link to="/courses" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
                 <GraduationCap className="w-4 h-4" />
                 <span>Courses</span>
               </Link>
-              <a href="/exams" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
+              <Link to="/exams" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
                 <PaperclipIcon className="w-4 h-4" />
                 <span>Exams</span>
-              </a>
-              <a href="/coming-soon" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
+              </Link>
+              <Link to="/coming-soon" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
                 <Library className="w-4 h-4" />
                 <span>Glossary</span>
-              </a>
+              </Link>
               <a href="https://docs.arbitrum.io/stylus/stylus-overview" className="flex items-center space-x-1 text-gray-700 hover:text-pink-600">
                 <BookA className="w-4 h-4" />
                 <span>Docs</span>
